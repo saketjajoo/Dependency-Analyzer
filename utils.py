@@ -11,7 +11,7 @@ def build_stack(data):
         level = int(level//3)
         name = line
 
-        # If the 1st character is not a lower case alphabet [dependency_name], it means that it is be a space character and needs to be stripped off)
+        # If the 1st character is not a lower case alphabet [dependency_name], it means that it is a space character and needs to be stripped off)
         if not (ord(line[0].lower()) >= 97 and ord(line[0].lower()) <= 122):
             name = line.strip()
         stack = stack[:level] + [name]
